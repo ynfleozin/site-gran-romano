@@ -18,25 +18,3 @@ body {
   color: var(--cor1);
   background-color: #f4f4f4;
 }
-
-@media (max-width: 768px) {
-  header nav ul {
-      display: none;
-  }
-
-  header .mobile-menu {
-      display: block;
-  }
-
-  #about {
-      flex-direction: column;
-  }
-
-  .product-list {
-      flex-direction: column;
-  }
-
-  footer .footer-content{
-      display: none;
-  }
-}

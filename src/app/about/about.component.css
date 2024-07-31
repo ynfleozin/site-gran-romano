@@ -1,25 +1,48 @@
 #about {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 2rem;
-  margin: 2rem 0;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start; /* Alinha itens no topo do container */
+  flex-direction: row; /* Coloca os itens em linha */
+  justify-content: space-between; /* Espaça os itens igualmente */
 }
 
 #about main {
-  flex: 1;
+  flex: 1; /* Permite que o main ocupe o espaço disponível */
+  margin-right: 2rem; /* Espaçamento entre o texto e a imagem */
 }
 
 #about aside {
-  flex: 1;
-  display: flex;
-  justify-content: flex-end;
+  flex: 0 0 auto; /* Garante que a imagem mantenha seu tamanho original */
 }
 
 #about img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+#about h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#about p{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column; /* Empilha verticalmente em telas pequenas */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  #about aside {
+    display: none; /* Oculta a imagem em telas pequenas */
+  }
+
+  #about h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
 }

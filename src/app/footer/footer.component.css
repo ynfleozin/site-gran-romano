@@ -56,3 +56,9 @@ footer .footer-section ul li a:hover {
 footer .footer-bottom {
   margin-top: 1rem;
 }
+
+@media (max-width: 768px) {
+  footer .footer-content{
+    display: none;
+  }
+}

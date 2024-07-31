@@ -1,27 +1,26 @@
-# ProjetoGranromano
+## Gran Romano - Site Corporativo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+Este projeto é um site corporativo desenvolvido para a empresa Gran Romano, especializada em produtos alimentícios. O site foi criado com o objetivo de fornecer informações detalhadas sobre a empresa e seus produtos, além de facilitar o contato com os clientes.
 
-## Development server
+### Funcionalidades
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Sobre a Empresa**: Uma seção dedicada à história, missão, visão e valores da Gran Romano.
+- **Catálogo de Produtos**: Apresenta todos os produtos oferecidos pela empresa, com descrições detalhadas e imagens.
+- **Redes Sociais**: Links para as redes sociais da empresa, permitindo aos usuários seguir e interagir com a Gran Romano.
+- **Contato**: Informações de contato, incluindo endereço, telefone e e-mail.
+- **Fale Conosco**: Um formulário de contato para que os visitantes possam enviar mensagens diretamente para a empresa.
+- **SAC**: Serviço de Atendimento ao Cliente, oferecendo suporte e esclarecimento de dúvidas.
 
-## Code scaffolding
+### Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **HTML5** e **CSS3**: Para a estrutura e estilização das páginas.
+- **JavaScript**: Para adicionar interatividade ao site.
+- **Responsive Design**: O site é totalmente responsivo, garantindo uma experiência de usuário otimizada em dispositivos móveis e desktops.
 
-## Build
+### Como Contribuir
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Contribuições são bem-vindas! Sinta-se à vontade para fazer um fork do projeto, abrir issues para bugs ou melhorias, e enviar pull requests.
 
-## Running unit tests
+### Autor
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto foi desenvolvido por Leonardo Alvarenga. Se você tiver alguma dúvida ou sugestão, entre em contato pelo e-mail [leonardoalvarengam@gmail.com].

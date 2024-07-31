@@ -59,6 +59,9 @@ header .mobile-menu-list {
   display: none;
   flex-direction: column;
   align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 header .mobile-menu-list li {
@@ -72,4 +75,22 @@ header .mobile-menu-list li a {
 header .mobile-menu-list li a:hover {
   text-decoration: none;
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  header div p{
+    font-size: 0.8rem;
+  }
+
+  header .mobile-menu {
+    display: flex;
+  }
+
+  header nav ul {
+    display: none;
+  }
+
+  header .mobile-menu-list.show {
+    display: flex;
+  }
 }

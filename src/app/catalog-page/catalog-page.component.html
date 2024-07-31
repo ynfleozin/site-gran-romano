@@ -1,10 +1,18 @@
 <div class="catalog-page-container">
   <h2>Catálogo de Produtos</h2>
+
+  <!-- Botões de filtro -->
+  <div class="filter-buttons">
+    <button (click)="onWeightChange('1kg')">1kg</button>
+    <button (click)="onWeightChange('50g')">50g</button>
+    <button (click)="onWeightChange('80g')">80g</button>
+  </div>
+
+  <!-- Lista de produtos filtrados -->
   <div class="product-list">
-    <div class="product" *ngFor="let product of products">
+    <div class="product" *ngFor="let product of filteredProducts">
       <img [src]="product.image" alt="{{product.name}}">
-      <h3>{{product.name}}</h3>
-      <p>{{product.description}}</p>
+      <h4>{{product.name}}</h4>
     </div>
   </div>
 </div>

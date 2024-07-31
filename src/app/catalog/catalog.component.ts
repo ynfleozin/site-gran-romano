@@ -4,26 +4,26 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.css']
+  styleUrls: ['./catalog.component.css'],
 })
 export class CatalogComponent {
   products = [
-    // Apenas três produtos para exibir na tela inicial
     {
-      image: 'assets/products/1kg/Produto1.jpg',
-      name: 'Azeitonas Verdes C/ Caroço',
-      description: 'Azeitonas Verdes em conserva com Caroço.'
+      image: 'assets/images/products/gourmet/Produto1.jpg',
+      name: 'Preta com Caroço',
     },
     {
-      image: 'assets/products/80g/Produto2.jpg',
-      name: 'Azeitonas Verdes S/ Caroço',
-      description: 'Azeitonas Verdes em conserva sem Caroço.'
+      image: 'assets/images/products/1kg/Produto2.jpg',
+      name: 'Champignon Fatiado',
     },
     {
-      image: 'assets/products/50g/Produto3.jpg',
-      name: 'Azeitonas Pretas',
-      description: 'Azeitonas Pretas em conserva.'
-    }
+      image: 'assets/images/products/50g/Produto9.jpg',
+      name: 'Cebolinha',
+    },
+    {
+      image: 'assets/images/products/50g/Produto10.jpg',
+      name: 'Azeitonas Verdes com Caroço',
+    },
   ];
 
   constructor(private router: Router) {}
