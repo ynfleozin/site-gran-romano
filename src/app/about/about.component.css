@@ -1,0 +1,25 @@
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin: 2rem 0;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about main {
+  flex: 1;
+}
+
+#about aside {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
