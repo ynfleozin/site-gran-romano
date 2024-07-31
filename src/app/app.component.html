@@ -1,24 +1,21 @@
-<!-- Cabeçalho -->
+<!-- app.component.html -->
 <app-header></app-header>
 
-<!-- Seção Sobre a Empresa -->
-<app-about></app-about>
+<!-- Contêiner principal que usa Flexbox -->
+<div class="main-container">
+  <!-- Condição para mostrar o conteúdo principal -->
+  <ng-container *ngIf="!isCatalogPage">
+    <app-about></app-about>
+    <app-catalog></app-catalog>
+    <app-social></app-social>
+    <app-contact></app-contact>
+    <app-fale-conosco></app-fale-conosco>
+    <app-sac></app-sac>
+  </ng-container>
 
-<!-- Seção Catálogo de Produtos -->
-<app-catalog></app-catalog>
-
-<!-- Seção Redes Sociais -->
-<app-social></app-social>
-
-<!-- Seção Contato -->
-<app-contact></app-contact>
-
-<!-- Seção Fale Conosco -->
-<app-fale-conosco></app-fale-conosco>
-
-<!-- Seção SAC -->
-<app-sac></app-sac>
+  <!-- Exibe o conteúdo da rota -->
+  <router-outlet *ngIf="isCatalogPage"></router-outlet>
+</div>
 
 <!-- Rodapé -->
 <app-footer></app-footer>
-<script src="src/scripts/main.js"></script>
