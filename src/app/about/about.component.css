@@ -1,18 +1,17 @@
 #about {
   padding: 2rem;
   display: flex;
-  align-items: flex-start; /* Alinha itens no topo do container */
-  flex-direction: row; /* Coloca os itens em linha */
-  justify-content: space-between; /* Espaça os itens igualmente */
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 #about main {
-  flex: 1; /* Permite que o main ocupe o espaço disponível */
-  margin-right: 2rem; /* Espaçamento entre o texto e a imagem */
+  flex: 1;
 }
 
 #about aside {
-  flex: 0 0 auto; /* Garante que a imagem mantenha seu tamanho original */
+  flex: 0 0 auto;
 }
 
 #about img {
@@ -33,12 +32,16 @@
 
 @media (max-width: 768px) {
   #about {
-    flex-direction: column; /* Empilha verticalmente em telas pequenas */
-    align-items: center; /* Centraliza os itens */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #about main article {
+    text-align: center;
   }
 
   #about aside {
-    display: none; /* Oculta a imagem em telas pequenas */
+    display: none;
   }
 
   #about h1 {

@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class CatalogComponent {
   products = [
     {
-      image: 'assets/images/products/gourmet/Produto1.jpg',
-      name: 'Preta com Caroço',
+      image: 'assets/images/products/vidro/Produto47.jpg',
+      name: 'Azeitonas Verdes Fatiadas',
     },
     {
       image: 'assets/images/products/1kg/Produto2.jpg',

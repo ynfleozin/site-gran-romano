@@ -10,6 +10,8 @@
 }
 
 .filter-buttons button {
+  height: 50px;
+  width: 200px;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 5px;
@@ -49,4 +51,11 @@
 .product h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .filter-buttons{
+    flex-direction: column;
+    align-items: center;
+  }
 }
