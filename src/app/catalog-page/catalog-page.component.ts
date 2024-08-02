@@ -16,7 +16,7 @@ export class CatalogPageComponent {
       { image: 'assets/images/products/1kg/Produto1.jpg', name: 'Champignon Inteiro' },
       { image: 'assets/images/products/1kg/Produto2.jpg', name: 'Champignon Fatiado' },
       { image: 'assets/images/products/1kg/Produto3.jpg', name: 'Azeitonas Verdes Fatiadas' },
-      { image: 'assets/images/products/1kg/Produto4.jpg', name: 'Azeitonas Verdes com Caroço Graúdas' },
+      { image: 'assets/images/products/1kg/Produto4.jpg', name: 'Azeitonas Verdes c/ Caroço Graúdas' },
       { image: 'assets/images/products/1kg/Produto5.jpg', name: 'Azeitonas Verdes com Caroço Média' },
       { image: 'assets/images/products/1kg/Produto6.jpg', name: 'Azeitonas Verdes com Caroço Miúda' },
       { image: 'assets/images/products/1kg/Produto7.jpg', name: 'Azeitonas Verdes Recheadas' },
@@ -79,18 +79,33 @@ export class CatalogPageComponent {
   };
 
   filteredProducts: Product[] = [];
-  selectedWeight: string = '1kg';
+  showFilters: boolean = false;
+  selectedWeight: string = 'all';
 
   constructor() {
+    this.initializeProducts();
+  }
+
+  initializeProducts() {
+    this.products['all'] = [];
+    for (let key in this.products) {
+      if (key !== 'all') {
+        this.products['all'] = this.products['all'].concat(this.products[key]);
+      }
+    }
     this.filterProducts();
   }
 
   filterProducts() {
-    this.filteredProducts = this.products[this.selectedWeight] || [];
+    this.filteredProducts = this.products[this.selectedWeight] || this.products['all'];
   }
 
   onWeightChange(weight: string) {
     this.selectedWeight = weight;
     this.filterProducts();
+  }
+
+  toggleFilter() {
+    this.showFilters = !this.showFilters;
   }
 }

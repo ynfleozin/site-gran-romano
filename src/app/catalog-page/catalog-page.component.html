@@ -1,7 +1,11 @@
 <div class="catalog-page-container">
   <h2>Catálogo de Produtos</h2>
 
-  <div class="filter-buttons">
+  <div class="filter-toggle-container">
+    <button class="filter-toggle" (click)="toggleFilter()">Filtrar</button>
+  </div>
+
+  <div class="filter-buttons" [ngClass]="{'show-filters': showFilters}">
     <button (click)="onWeightChange('1kg')">1kg</button>
     <button (click)="onWeightChange('50g')">50g</button>
     <button (click)="onWeightChange('80g')">80g</button>

@@ -2,11 +2,34 @@
   padding: 2rem;
 }
 
+.filter-toggle-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filter-toggle {
+  display: none;
+  height: 50px;
+  width: 200px;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: var(--cor2);
+  color: #fff;
+  cursor: pointer;
+}
+
+.filter-toggle:hover {
+  background: var(--cor1);
+}
+
 .filter-buttons {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  flex-wrap: wrap;
 }
 
 .filter-buttons button {
@@ -54,8 +77,23 @@
 }
 
 @media (max-width: 768px) {
-  .filter-buttons{
+  .filter-toggle {
+    display: block;
+  }
+
+  .filter-buttons {
+    display: none;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
+  }
+
+  .filter-buttons.show-filters {
+    display: flex;
+  }
+
+  .filter-buttons button {
+    width: 100%;
+    max-width: 300px;
   }
 }
