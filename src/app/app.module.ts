@@ -11,6 +11,7 @@ import { FaleConoscoComponent } from './fale-conosco/fale-conosco.component';
 import { SacComponent } from './sac/sac.component';
 import { FooterComponent } from './footer/footer.component';
 import { CatalogPageComponent } from './catalog-page/catalog-page.component';
+import { HeaderImageComponent } from './header-image/header-image.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CatalogPageComponent } from './catalog-page/catalog-page.component';
     FaleConoscoComponent,
     SacComponent,
     FooterComponent,
-    CatalogPageComponent
+    CatalogPageComponent,
+    HeaderImageComponent
   ],
   imports: [
     BrowserModule,
