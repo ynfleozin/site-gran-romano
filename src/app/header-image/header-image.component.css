@@ -1,5 +1,6 @@
 .header-image-container {
   width: 100%;
+  position: relative;
 }
 
 .header-image-container img {
