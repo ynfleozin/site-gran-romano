@@ -1,21 +1,9 @@
 <!-- app.component.html -->
 <app-header></app-header>
 
-<!-- Contêiner principal que usa Flexbox -->
+<!-- Contêiner principal que usa o RouterOutlet para renderizar o conteúdo das rotas -->
 <div class="main-container">
-  <!-- Condição para mostrar o conteúdo principal -->
-  <ng-container *ngIf="!isCatalogPage">
-    <app-header-image></app-header-image>
-    <app-about></app-about>
-    <app-catalog></app-catalog>
-    <app-social></app-social>
-    <app-contact></app-contact>
-    <app-fale-conosco></app-fale-conosco>
-    <app-sac></app-sac>
-  </ng-container>
-
-  <!-- Exibe o conteúdo da rota -->
-  <router-outlet *ngIf="isCatalogPage"></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 
 <!-- Rodapé -->

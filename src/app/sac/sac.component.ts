@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './sac.component.css'
 })
 export class SacComponent {
-
+  email = "sac@granromano.com.br"
 }

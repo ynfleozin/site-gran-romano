@@ -7,16 +7,6 @@ import { filter } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  isCatalogPage = false;
+export class AppComponent {
 
-  constructor(private router: Router) {}
-
-  ngOnInit() {
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      this.isCatalogPage = this.router.url === '/catalog-page';
-    });
-  }
 }
