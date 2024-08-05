@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Renderer2 } from '@angular/core';
+import { ScrollService } from '../services/scrollservice'; // Ajuste o caminho conforme necessário
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,10 @@ import { Component, AfterViewInit, Renderer2 } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements AfterViewInit {
-  constructor(private renderer: Renderer2) {}
+  constructor(
+    private renderer: Renderer2,
+    private scrollService: ScrollService
+  ) {}
 
   ngAfterViewInit() {
     const mobileMenuButton = this.renderer.selectRootElement('#mobile-menu-button', true);
@@ -19,5 +23,9 @@ export class HeaderComponent implements AfterViewInit {
         this.renderer.addClass(mobileMenuList, 'show');
       }
     });
+  }
+
+  scrollToSection(sectionId: string): void {
+    this.scrollService.scrollToElement(sectionId);
   }
 }

@@ -7,10 +7,9 @@
   </div>
   <nav>
     <ul>
-      <li><a routerLink="/about">Sobre a Empresa</a></li>
+      <li><a (click)="scrollToSection('about')">Sobre a Empresa</a></li>
       <li><a routerLink="/catalog-page">Catálogo de Produtos</a></li>
-      <li><a routerLink="/social">Redes Sociais</a></li>
-      <li><a routerLink="/contact">Contato</a></li>
+      <li><a (click)="scrollToSection('social')">Redes Sociais</a></li>
       <li><a routerLink="/fale-conosco-page">Fale Conosco</a></li>
     </ul>
     <div class="mobile-menu">
@@ -21,7 +20,6 @@
         <li><a routerLink="/about">Sobre a Empresa</a></li>
         <li><a routerLink="/catalog-page">Catálogo de Produtos</a></li>
         <li><a routerLink="/social">Redes Sociais</a></li>
-        <li><a routerLink="/contact">Contato</a></li>
         <li><a routerLink="/fale-conosco-page">Fale Conosco</a></li>
       </ul>
     </div>
