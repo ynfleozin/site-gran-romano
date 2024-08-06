@@ -25,6 +25,7 @@ header nav ul {
   display: flex;
   justify-content: center;
   padding: 0;
+  cursor: pointer;
 }
 
 header nav ul li {
