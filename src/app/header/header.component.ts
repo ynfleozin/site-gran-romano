@@ -26,6 +26,6 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   scrollToSection(sectionId: string): void {
-    this.scrollService.scrollToElement(sectionId);
+    this.scrollService.navigateAndScroll(sectionId);
   }
 }
