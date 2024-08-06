@@ -1,6 +1,12 @@
 #sac {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem;
   text-align: center;
+  height: 50vh;
+  box-sizing: border-box;
 }
 
 #sac h2 {
