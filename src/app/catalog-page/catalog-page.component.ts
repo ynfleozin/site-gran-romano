@@ -103,6 +103,7 @@ export class CatalogPageComponent {
   onWeightChange(weight: string) {
     this.selectedWeight = weight;
     this.filterProducts();
+    this.showFilters = false;
   }
 
   toggleFilter() {
