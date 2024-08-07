@@ -64,7 +64,7 @@ header .mobile-menu-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 80%;
 }
 
 header .mobile-menu-list li {
@@ -82,7 +82,7 @@ header .mobile-menu-list li:first-child {
 header .mobile-menu-list li a {
   color: white;
   text-decoration: none;
-  display: block; 
+  display: block;
 }
 
 header .mobile-menu-list li a:hover {
