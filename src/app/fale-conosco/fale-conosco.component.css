@@ -1,13 +1,102 @@
 #fale-conosco {
   padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   text-align: center;
 }
 
-#fale-conosco h2 {
+h1 {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-size: 2rem;
 }
 
-#fale-conosco p{
-  font-size: 1.5rem;
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group {
+  flex: 1 1 300px;
+  margin: 0.5rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--cor1);
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contact-option {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.contact-option a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-option i {
+  font-size: 3rem;
+  color: var(--cor2);
+  margin-bottom: 0.5rem;
+}
+
+.contact-option p {
+  font-size: 1rem;
+}
+
+.location {
+  margin-top: 2rem;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  .contact-options {
+    flex-direction: column;
+  }
+
+  .contact-option {
+    margin-bottom: 1rem;
+  }
 }
