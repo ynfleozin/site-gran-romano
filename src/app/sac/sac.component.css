@@ -22,4 +22,8 @@
   #sac{
     height: auto;
   }
+
+  #sac p{
+    font-size: 1.2rem;
+  }
 }
