@@ -15,6 +15,7 @@ export class HeaderComponent implements AfterViewInit {
   ngAfterViewInit() {
     const mobileMenuButton = this.renderer.selectRootElement('#mobile-menu-button', true);
     const mobileMenuList = this.renderer.selectRootElement('#mobile-menu-list', true);
+    const mobileMenuLinks = mobileMenuList.querySelectorAll('a');
 
     this.renderer.listen(mobileMenuButton, 'click', () => {
       if (mobileMenuList.classList.contains('show')) {
@@ -22,6 +23,12 @@ export class HeaderComponent implements AfterViewInit {
       } else {
         this.renderer.addClass(mobileMenuList, 'show');
       }
+    });
+
+    mobileMenuLinks.forEach((link: Element) => {
+      this.renderer.listen(link, 'click', () => {
+        this.renderer.removeClass(mobileMenuList, 'show');
+      });
     });
   }
 
