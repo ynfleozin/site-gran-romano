@@ -3,27 +3,27 @@
     <h1>Fale conosco</h1>
     <p>Dúvidas, críticas ou sugestões?</p>
     <div class="form-container">
-      <form>
+      <form action="https://formsubmit.co/your@email.com" method="POST">
         <div class="form-group">
-          <input type="text" placeholder="Nome Completo">
+          <input type="text" name="nome" placeholder="Nome Completo" required>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Email">
+          <input type="email" name="email" placeholder="Email" required>
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Telefone">
+          <input type="text" placeholder="Telefone" required>
         </div>
         <div class="form-group">
-          <textarea placeholder="Mensagem"></textarea>
+          <textarea name="mensagem" placeholder="Mensagem" required></textarea>
         </div>
         <button type="submit">Enviar</button>
       </form>
     </div>
     <div class="contact-options">
       <div class="contact-option">
-        <a href="https://api.whatsapp.com/send?phone=5511987654321" target="_blank">
+        <a href="https://wa.me/5511959290657" target="_blank">
           <i class="fa-brands fa-whatsapp"></i>
-          <p>Fale Conosco<br>(11) 3569-1665</p>
+          <p>Fale Conosco <br>(11) 95929-0657 <br>(11) 3569-1665</p>
         </a>
       </div>
       <div class="contact-option">
