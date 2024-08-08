@@ -23,14 +23,14 @@ p {
 }
 
 form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: block; 
+  text-align: center;
 }
 
 .form-group {
-  flex: 1 1 300px;
-  margin: 0.5rem;
+  margin: 0.5rem auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 input, textarea {
@@ -43,6 +43,7 @@ input, textarea {
 
 button {
   padding: 1rem 2rem;
+  margin-top: 1rem;
   border: none;
   background-color: var(--cor1);
   color: white;
@@ -94,7 +95,7 @@ button {
 
 @media (max-width: 768px) {
   .form-group {
-    flex: 1 1 100%;
+    width: 100%;
   }
 
   .contact-options {
